@@ -11,3 +11,14 @@ extension Array {
     }
   }
 }
+
+extension Collection where Element: Equatable {
+  func firstDifferentValue(from other: Self) -> (Element, Element)? {
+    for (element1, element2) in zip(self, other) {
+      if element1 != element2 {
+        return (element1, element2)
+      }
+    }
+    return nil
+  }
+}

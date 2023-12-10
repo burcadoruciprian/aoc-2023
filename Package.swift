@@ -10,7 +10,7 @@ let dependencies: [Target.Dependency] = [
 
 let package = Package(
     name: "AdventOfCode",
-    platforms: [.macOS(.v13)],
+    platforms: [.macOS(.v14)],
     dependencies: [
         .package(
             url: "https://github.com/apple/swift-algorithms.git",
